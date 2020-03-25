@@ -51,13 +51,14 @@
                     <div class="comment-author clearfix">
                       <a href="#" class="link-author"><%= post_comment.user.name %></a>
                       <span class="comment-meta">
-                        <span class="comment-date"><% post_comment.created_at.strftime('%Y/%M/%d') %></span>
+                        <span class="comment-date"><%= post_comment.created_at.strftime('%Y/%M/%d') %></span>
                       </span>
                     </div>
                     <div class="comment-entry"><%= post_comment.comment %></div>
                   </div>
                 </div>
               </li>
+              <% end %>
             </ol>
           </div>
           <hr>
